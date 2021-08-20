@@ -1,0 +1,20 @@
+.custom-btn{
+    border: 1px solid #222;
+    transition: 0.125s;
+}
+.custom-btn:hover{
+    background-color: #222;
+    color: #fff;
+}
+.price-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    margin: 5px 0;
+    opacity: 0.1;
+}
+.lite-hr{
+    opacity: 1;
+}
