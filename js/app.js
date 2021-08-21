@@ -49,11 +49,11 @@ firstMemoryItem.addEventListener('click', function(){
     itemCost('memory', 0);
     totalPrice();
     
-})
+});
 secondMemoryItem.addEventListener('click', function(){
     itemCost('memory', 180);
     totalPrice();
-})
+});
 
 // event handler for storage 
 const firstStorageItem = storage('first');
@@ -62,15 +62,15 @@ const thirdStorageItem = storage('third');
 firstStorageItem.addEventListener('click', function(){
     itemCost('storage', 0);
     totalPrice();
-})
+});
 secondStorageItem.addEventListener('click', function(){
     itemCost('storage', 100);
     totalPrice();
-})
+});
 thirdStorageItem.addEventListener('click', function(){
     itemCost('storage', 180);
     totalPrice();
-})
+});
 
 // event handler for delivery 
 const firstDeliveryPackage = delivery('first');
@@ -78,12 +78,12 @@ const secondDeliveryPackage = delivery('second');
 firstDeliveryPackage.addEventListener('click', function(){
     itemCost('delivery', 0);
     totalPrice();
-})
+});
 
 secondDeliveryPackage.addEventListener('click', function(){
     itemCost('delivery', 20);
     totalPrice();
-})
+});
 
 // event handler for pomo code
 const pomoBtn = document.getElementById('pomo-btn');
@@ -95,4 +95,4 @@ pomoBtn.addEventListener('click', function(){
         discountTotal().innerText = discountAmount - discountAmount * 0.2;
     }
     pomoCode.value = '';
-})
+});
