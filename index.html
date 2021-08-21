@@ -25,21 +25,21 @@
                     <!-- memory section  -->
                     <div class="item py-3">
                         <h5 class="fw-bold">Memory</h5>
-                        <button class="btn custom-btn">8GB unified memory</button>
-                        <button class="btn custom-btn">16GB unified memory</button>
+                        <button id="first-memory" class="btn custom-btn">8GB unified memory</button>
+                        <button id="second-memory" class="btn custom-btn">16GB unified memory</button>
                     </div>
                     <!-- storage section  -->
                     <div class="item py-3">
                         <h5 class="fw-bold">Storage</h5>
-                        <button class="btn custom-btn">256GB SSD storage</button>
-                        <button class="btn custom-btn">512GB SSD storage</button>
-                        <button class="btn custom-btn">1TB SSD storage</button>
+                        <button id="first-storage" class="btn custom-btn">256GB SSD storage</button>
+                        <button id="second-storage" class="btn custom-btn">512GB SSD storage</button>
+                        <button id="third-storage" class="btn custom-btn">1TB SSD storage</button>
                     </div>
                     <!-- delivary section  -->
                     <div class="item py-3">
                         <h5 class="fw-bold">Choose your delivery option</h5>
-                        <button class="btn custom-btn">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button class="btn custom-btn">Friday, Aug 21 Delivery charge $20</button>
+                        <button id="first-delivery" class="btn custom-btn">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="second-delivery" class="btn custom-btn">Friday, Aug 21 Delivery charge $20</button>
                     </div>
                     <!-- price section  -->
                     <div class="price-items">
@@ -51,7 +51,7 @@
                                         <h6 class="fw-bold">Best price</h6>
                                     </div>
                                     <div class="col-md-3">
-                                        <h6 class="fw-bold">$1299</h6>
+                                        <h6 class="fw-bold">$<span id="best-price">1299</span> </h6>
                                     </div>
                                 </div>
                                 <hr>
@@ -61,7 +61,7 @@
                                         <h6 class="fw-bold">Extra Memory Cost</h6>
                                     </div>
                                     <div class="col-md-3">
-                                        <h6 class="fw-bold">$0</h6>
+                                        <h6 class="fw-bold">$<span id="memory-cost">0</span></h6>
                                     </div>
                                 </div>
                                 <hr>
@@ -71,7 +71,7 @@
                                         <h6 class="fw-bold">Extra Storage Cost</h6>
                                     </div>
                                     <div class="col-md-3">
-                                        <h6 class="fw-bold">$0</h6>
+                                        <h6 class="fw-bold">$<span id="storage-cost">0</span></h6>
                                     </div>
                                 </div>
                                 <hr>
@@ -81,7 +81,7 @@
                                         <h6 class="fw-bold">Delivery charge</h6>
                                     </div>
                                     <div class="col-md-3">
-                                        <h6 class="fw-bold">$0</h6>
+                                        <h6 class="fw-bold">$<span id="delivery-cost">0</span></h6>
                                     </div>
                                 </div>
                                 <hr class="lite-hr">
@@ -91,7 +91,7 @@
                                         <h6 class="fw-bold">Total</h6>
                                     </div>
                                     <div class="col-md-3">
-                                        <h6 class="fw-bold">$1299</h6>
+                                        <h6 class="fw-bold">$<span id="total-cost">1299</span></h6>
                                     </div>
                                 </div>
                                 <hr>
