@@ -1,9 +1,8 @@
-// 
- function cost(id, number){
+// function for per items cost
+ function itemCost(id, number){
     const peviousMemoryPrice = document.getElementById(id + '-cost');
     peviousMemoryPrice.innerText = number;
-    const newcost = parseInt(peviousMemoryPrice.innerText);
-    
+    const newcost = parseInt(peviousMemoryPrice.innerText);   
  }
 
 // function for memory
@@ -21,6 +20,7 @@ function delivery(id){
     return document.getElementById(id + '-delivery');
 }
 
+// function for total price 
 function totalPrice(){
     const bestPrice = document.getElementById('best-price').innerText;
     const memoryTotal = document.getElementById('memory-cost').innerText;
@@ -34,13 +34,12 @@ function totalPrice(){
 const firstMemoryCheck = memory('first');
 const secondMemoryCheck = memory('second');
 firstMemoryCheck.addEventListener('click',function(){
-    // const bestPrice = document.getElementById('best-price');
-    cost('memory', 0);
+    itemCost('memory', 0);
     totalPrice();
     
 })
 secondMemoryCheck.addEventListener('click',function(){
-    cost('memory', 180);
+    itemCost('memory', 180);
     totalPrice();
 })
 
@@ -49,15 +48,15 @@ const firstStorageCheck = storage('first');
 const secondStorageCheck = storage('second');
 const thirdStorageCheck = storage('third');
 firstStorageCheck.addEventListener('click',function(){
-    cost('storage', 0);
+    itemCost('storage', 0);
     totalPrice();
 })
 secondStorageCheck.addEventListener('click',function(){
-    cost('storage', 100);
+    itemCost('storage', 100);
     totalPrice();
 })
 thirdStorageCheck.addEventListener('click',function(){
-    cost('storage', 180);
+    itemCost('storage', 180);
     totalPrice();
 })
 
@@ -65,12 +64,12 @@ thirdStorageCheck.addEventListener('click',function(){
 const firstDelivery = delivery('first');
 const secondDelivery = delivery('second');
 firstDelivery.addEventListener('click',function(){
-    cost('delivery', 0);
+    itemCost('delivery', 0);
     totalPrice();
 })
 
 secondDelivery.addEventListener('click',function(){
-    cost('delivery', 20);
+    itemCost('delivery', 20);
     totalPrice();
 })
 
