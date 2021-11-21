@@ -96,3 +96,5 @@ pomoBtn.addEventListener('click', function(){
     }
     pomoCode.value = '';
 });
+
+//finished
